@@ -1,0 +1,251 @@
+  html {
+    font-family: 'Noto Sans HK', sans-serif;
+  }
+
+  body {
+    background-color: #fff7cb;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 10vh;
+  }
+
+  .bt-menu {
+    border: none;
+    border-radius: 15px;
+    background-color: #69cecd;
+    transition-duration: 2s;
+    transition-property: border-radius;
+    width: 20vw;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #394244;
+  }
+
+  .bt-menu:hover {
+    color: #f0fdff;
+    background-color: rgb(225, 121, 121);
+    box-shadow: 0 10px 16px rgb(223, 132, 132);
+    transition: all 0.2s ease;
+    border-radius: 100px;
+  }
+
+  .cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .logo-cabecera h1 {
+    font-size: 9vh;
+    color: #394244;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .termometro {
+    width: 37%;
+    height: auto;
+    padding: 0;
+  }
+
+  h4 {
+    font-size: 3.8vh;
+    color: #394244;
+    text-align: center;
+    width: 70%;
+  }
+
+  .logo-cabecera {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 0;
+    margin-top: 2.5rem;
+  }
+  
+  .logo-cabecera img {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .contenedor {
+    display: flex;
+      justify-content: center;
+    }
+
+  form button {
+    width: 27vh;
+    height: 27vh;
+    padding: 5px 10px;
+    margin: 0 20px 20px 20px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #69cecd;
+    display: inline-block;
+    transition-duration: 2s;
+    transition-property: border-radius;
+
+  }
+
+  form button:hover {
+    background-color: rgb(225, 121, 121);
+    box-shadow: 0 10px 16px rgb(223, 132, 132);
+    transition: all 0.2s ease;
+    border-radius: 100px;
+  }
+
+  form button img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  #logo-fin {
+    height: 350px;
+    width: auto;
+  }
+
+  .filtro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 10vh;
+  }
+  
+  .bt-filtro {
+    border-radius: 15px;
+    width: 20vw;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #394244;
+  }
+
+  .bt-filtro:hover {
+    color: #f0fdff;
+    background-color: rgb(225, 121, 121);
+    box-shadow: 0 10px 16px rgb(223, 132, 132);
+    transition: all 0.2s ease;
+    border-radius: 100px;
+  }
+  
+.tabla-filtrada {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.bt-exportar {
+  border-radius: 15px;
+  width: 20vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #394244;
+}
+
+.bt-exportar:hover {
+  color: #f0fdff;
+  background-color: rgb(225, 121, 121);
+  box-shadow: 0 10px 16px rgb(223, 132, 132);
+  transition: all 0.2s ease;
+  border-radius: 100px;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+input {
+  font-size: 1.2rem;
+}
+
+.tabla-filtrada {
+  margin-top: 20px; /* Espacio superior */
+}
+
+.tabla-filtrada table {
+  width: 70%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.tabla-filtrada th,
+.tabla-filtrada td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Estilos para la cabecera de la tabla */
+.tabla-filtrada th {
+  background-color: #5c303a;
+  color: #f0fdff;
+}
+
+.tabla-filtrada tr:not(:first-child) {
+  background-color: #c6e9ee;
+}
+
+.tabla-filtrada tr:nth-child(even) {
+  background-color: #f0fdff;
+}
+
+.boton-redireccion {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+  right: 20px; /* Ajusta la distancia desde el borde derecho */
+  z-index: 9999; /* Asegura que esté encima de otros elementos */
+}
+
+.bt-oculto {
+  border: none;
+  background-color: #fff7cb;
+  padding: 10px 20px;
+  height: 5vh;
+  width: 5vh;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.bt-oculto:hover {
+  background-color: rgb(225, 121, 121);
+}

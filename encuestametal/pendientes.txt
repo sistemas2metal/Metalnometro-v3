@@ -1,0 +1,12 @@
+Modificaciones para seccion clientes
+- podria agregarse en la seccion filtrar_encuesta un boton para exportar directamente a excel todas las valoraciones a la fecha 
+
+SELECT
+    MAX(CASE WHEN id_pregunta = 2 THEN valoracion END) AS Valoracion_Ventas,
+    MAX(CASE WHEN id_pregunta = 3 THEN valoracion END) AS Valoracion_Caja,
+    MAX(CASE WHEN id_pregunta = 4 THEN valoracion END) AS Valoracion_Logistica,
+    MAX(fecha_hora) AS Fecha_Hora,
+    id_cliente AS ID_Cliente
+FROM encuesta
+WHERE fecha_hora >= '2023-08-29' AND fecha_hora < '2023-08-30'
+GROUP BY id_cliente;
